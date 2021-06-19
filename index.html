@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css"
+    />
+  </head>
+  <body>
+    <header class="App-header">
+      <section class="hero is-link">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Portfolio Tracker</h1>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <table id="table" class="table">
+        <thead>
+          <tr>
+            <th>Stock Ticker</th>
+            <th>Amount of Shares</th>
+            <th>Price Per Share</th>
+            <th>Total Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <input
+        type="text"
+        id="ticker"
+        class="input"
+        placeholder="Enter Stock Ticker"
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        id="shareAmount"
+        class="input"
+        placeholder="Enter Amount of Shares"
+      />
+      <br />
+      <br />
+      <button class="button" onclick="addStock()">submit</button>
+      <h2>Total:</h2>
+      <br />
+      <output id="out"></output>
+    </main>
+  </body>
+</html>
